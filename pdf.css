@@ -1,0 +1,124 @@
+.book,
+.contact-detail address,
+.contact-detail p {
+    overflow: hidden
+}
+
+.book ul,
+.home-wrapper-alt,
+.video-btn i {
+    vertical-align: middle
+}
+
+.back-to-top i {
+    color: #fff;
+    font-size: 22px;
+    display: block;
+    line-height: 30px
+}
+
+.book,
+.book img,
+.book::after,
+.book::before {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px
+}
+
+.book ul {
+    display: table-cell
+}
+
+.list-inline {
+    padding-left: 0;
+    list-style: none
+}
+
+.list-inline>li {
+    display: inline-block;
+    margin-left: 3em;
+    padding-left: 0 !important
+}
+
+.book,
+.book a {
+    margin: 0;
+    padding: 0;
+    display: block
+}
+
+.list-inline>li:first-child {
+    margin-left: 0
+}
+
+.book {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: #fff;
+    z-index: 1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1), 0 9px 20px 0 rgba(0, 0, 0, .25);
+    -webkit-transition: box-shadow .3s linear;
+    transition: box-shadow .3s linear
+}
+
+.book::after,
+.book::before,
+.glow::after {
+    content: '';
+    position: absolute
+}
+
+.book img {
+    width: inherit;
+    height: inherit;
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    -webkit-transition: all .45s ease;
+    transition: all .45s ease
+}
+
+.book:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25), 0 9px 20px 0 rgba(0, 0, 0, .45)
+}
+
+.book:hover img {
+    -webkit-transform: rotateY(-25deg);
+    transform: rotateY(-25deg);
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, .2)
+}
+
+.book::after,
+.book::before {
+    display: block;
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    top: 0;
+    background: #fff;
+    border: 1px solid #d9d9d9
+}
+
+.book::before {
+    left: -3px
+}
+
+.book::after {
+    left: -6px
+}
+
+.glow::after {
+    background-image: -webkit-linear-gradient(right, transparent 4%, hsla(0, 0%, 100%, .4) 61%, hsla(0, 0%, 100%, .4) 85%, hsla(0, 0%, 74%, 0) 96%);
+    background-image: linear-gradient(-90deg, transparent 4%, hsla(0, 0%, 100%, .3) 61%, hsla(0, 0%, 100%, .5) 85%, hsla(0, 0%, 74%, 0) 96%);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: .77;
+    pointer-events: none;
+    -webkit-transition: opacity .15s;
+    transition: opacity .15s;
+    width: 100%
+}
