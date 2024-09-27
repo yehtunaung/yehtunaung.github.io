@@ -314,3 +314,65 @@ a.button:hover {
     border-color: none !important;
 }
 
+/* Projects */
+.card-90s {
+	background-color: #004d00; /* Light green card background */
+	border: 2px solid #008000; /* Green border */
+	border-radius: 15px;
+	padding: 20px;
+	box-shadow: 5px 5px 15px rgba(0, 128, 0, 0.5); /* Green shadow */
+	font-family: 'Comic Sans MS', cursive, sans-serif; /* 90's font style */
+}
+.card-header {
+	background-color: #004d00; /* Lime green header */
+	border-bottom: 2px solid #008000; /* Green border */
+	color: #00ff00; /* White text */
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	border-top-left-radius: 13px;
+	border-top-right-radius: 13px;
+}
+.card-90s .card-body {
+	color: #006400; /* Dark green text */
+}
+.btn-90s {
+	background-color: #004d00; /* Lime green button */
+	border: 2px solid #008000; /* Green border */
+	color: #00ff00; /* White text */
+	font-weight: bold;
+}
+.btn-90s:hover {
+	background-color: #228b22; /* Darker green on hover */
+	color: #00ff00;
+}
+
+/* Skills  */
+.skills-card {
+	background-color: #004d00; /* Darker green card background */
+	border: 2px solid #00ff00; /* Bright green border */
+	border-radius: 10px;
+	padding: 15px;
+	box-shadow: 5px 5px 15px rgba(0, 255, 0, 0.5); /* Green shadow */
+	margin-bottom: 20px;
+}
+.skills-card .card-header {
+	background-color: #006600; /* Darker green header */
+	border-bottom: 1px solid #00ff00; /* Green border */
+	color: #00ff00; /* Bright green text */
+	text-align: center;
+	font-size: 1.25rem;
+	font-weight: bold;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.skills-card .card-body {
+	color: #00ff00; /* Bright green text */
+}
+.skills-card .card-body ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+.skills-card .card-body ul li {
+	margin-bottom: 10px;
+}
