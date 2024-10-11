@@ -1,4 +1,6 @@
-    function sendMail(e) {
+
+
+function sendMail(e) {
         e.preventDefault();
 
         const form = document.querySelector('form');
