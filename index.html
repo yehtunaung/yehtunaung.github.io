@@ -8,6 +8,12 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pdf.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <script src="mail.js"></script>
 </head>
 
 <body>
@@ -209,12 +215,12 @@
                 <!-- Tab 4 -->
                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                     <form>
-                        <label>Name &nbsp; &nbsp;>></label><input type="text" /><br />
-                        <label>Email &nbsp; &nbsp;>></label><input type="text" /><br />
-                        <label>Subject &nbsp;>></label><input type="text" /><br />
-                        <label>Message &nbsp;>></label><textarea id="text" rows="1"></textarea><br /><br /><br />
+                        <label>Name &nbsp; &nbsp;>></label><input type="text" id="name" /><br />
+                        <label>Email &nbsp; &nbsp;>></label><input type="text" id="email" /><br />
+                        <label>Subject &nbsp;>></label><input type="text" id="subject" /><br />
+                        <label>Message &nbsp;>></label><textarea id="text" rows="1" id="message"></textarea><br /><br /><br />
 
-                        <input type="submit" value="Submit" />
+                        <a type="submit" onclick="sendMail()" >Submit</a>
                         <a class="button" alt="" href="index.html">Cancel</a>
                     </form>
                 </div>
